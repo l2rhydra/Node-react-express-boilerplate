@@ -1,0 +1,14 @@
+{
+    "name": "hydex-web",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node server/index.js",
+        "client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && npm run start"
+    },
+    "dependencies": {
+        "concurrently": "^7.0.0"
+    }
+}
